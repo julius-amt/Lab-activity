@@ -35,6 +35,9 @@ const sum = arr => arr.reduce((accumulator, num) => accumulator + num, 0);
  * @returns {number} The average of the numbers in the array
  */
 const average = arr => {
+    if (arr.length === 0) {
+        return 0;
+    }
     const sumOfNumbers = sum(arr);
     return sumOfNumbers / arr.length;
 }

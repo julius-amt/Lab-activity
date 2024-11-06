@@ -29,6 +29,9 @@ const isPalindrome = str => {
 * @param {string} str The string to count the number of words
 */
 const wordCount = str => {
+    if (str.length === 0) {
+        return 0;
+    }
     const arrayOfWords = str.split(' ');
     return arrayOfWords.length;
 }
